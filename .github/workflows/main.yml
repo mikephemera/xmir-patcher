@@ -28,7 +28,7 @@ jobs:
           git fetch upstream
       - name: Merge upstream/main into origin/main
         run: |
-          git checkout master
+          git checkout main
           # 合并上游的 main 分支（如果上游主分支叫 master，请修改此处）
           git merge upstream/main --no-edit
           git push origin main
